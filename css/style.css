@@ -1,0 +1,240 @@
+body{
+    background: url('../images/background.jpg');
+}
+a:link {text-decoration:none;}      /* unvisited link */
+a:hover {color:#FF00FF;}  /* mouse over link */
+.mainpage{
+	margin:0px auto;
+	border:1px;
+	background:url('../images/backgrounpage.jpg');
+	width:999px;
+	height:1205px;
+}
+.logo {
+	
+	border:0px solid red;
+	background:url('../images/image2.JPG');
+	width:988px;
+	height:90px;
+	overflow: hidden;
+}
+.logo span{
+	float:right;
+	margin-top:50px;
+	background-color:rgba(154,205,50,.50);
+	
+}
+#menubar {
+	background:#000000;
+	width:988px;
+	height:40px;    
+	border-radius: 4px;
+}
+.up_left{
+	margin:1px;
+	border:0px solid red;
+	width:200px;
+	height:510px;
+	overflow: hidden;
+	float:left;
+}
+	.corporate{
+		background-color:#9ACD32;
+		margin-bottom:7px; 
+		border:0px solid red;
+		background:#9ACD32;
+		width:195px;
+		height:250px;
+		overflow: hidden;
+		float:left;
+	}
+	.gensec{
+		background-color:#9ACD32;
+		border:0px solid red;
+		width:195px;
+		height:250px;
+		overflow: hidden;
+		float:left;
+	}
+.up_middle{
+	margin:1px auto;
+	border:0px solid red;
+	width:586px;
+	height:510px;
+	overflow: hidden;
+	float:left;
+}
+	.slide{
+		border:0px solid red;
+		width:585px;
+		height:300px;
+		overflow: hidden;
+		float:left;
+	}
+	.article1{
+		margin:10px;
+		border:0px solid red;
+		width:270px;
+		height:195px;
+		font-size:13px;
+		overflow: hidden;
+		float:left;
+	}
+	.article2{
+		margin:10px 15px 0px 0px;
+		border:0px solid red;
+		width:270px;
+		height:195px;
+		font-size:13px;
+		overflow: hidden;
+		float:right;
+	}
+.up_right{
+	margin:2px 5px 10px;
+	border:0px solid red;
+	width:200px;
+	height:510px;
+	overflow: hidden;
+	float:left;
+}
+	.parentile{
+		background-color:#9ACD32;
+		margin:0px 0px 10px; 
+		border:0px solid red;
+		width:195px;
+		height:250px;
+		overflow: hidden;
+		float:left;
+	}
+	.general_fraud{
+		background-color:#9ACD32;		
+		border:0px solid red;
+		width:195px;
+		height:250px;
+		overflow: hidden;
+		float:left;
+	}
+
+
+.down_left{
+	margin:0px 5px 0px 0px;
+	border:0px solid red;
+	width:195px;
+	height:500px;
+	overflow: hidden;
+	float:left;
+}
+	.news_feeds{
+		margin:5px 0px 0px 0px; 
+		padding-top:40px;
+		//border:0px solid red;
+		width:199px;
+		height:390px;
+		background-color: rgba(154,205,50,.50);//#9ACD32;
+		background-image:url('../images/news.PNG');
+		font-size:13px;
+		float:left;
+		overflow:hidden;
+}
+	
+.down_middle{
+	margin:0px 8px 0px 0px; 
+	border:0px solid red;
+	font-size:13px;
+	width:580px;
+	height:500px;
+	//background:url(images/document.png) no-repeat ;
+	overflow: hidden;
+	float:left;
+}
+.articalHeading{
+margin:5px;
+font-size:14px;
+font-weight:bold;
+}
+.down_middle_article1{
+	
+	text-align:justify;
+	margin:0px 5px 0px 10px;
+	border:0px solid red;
+	width:270px;
+	height:212px;
+	overflow: hidden;
+	float:left;
+}
+.down_middle_article2{
+	
+	text-align:justify;
+	margin:0px 10px 0px 10px;
+	border:0px solid red;
+	width:270px;
+	height:212px;
+	overflow: hidden;
+	float:right;
+}
+.down_middle_article3{
+	text-align:justify;
+	margin:	10px 0px 0px 10px;
+	border:0px solid red;
+	width:270px;
+	height:244px;
+	overflow: hidden;
+	float:left;
+}
+
+
+.down_middle_article4{
+	text-align:justify;
+	margin:10px 10px 0px 0px; 
+	border:0px solid red;
+	width:270px;
+	height:244px;
+	overflow: hidden;
+	float:right;
+}
+
+.down_right{
+	margin:0px 0px 0px; 
+	border:0px solid red;
+	background:url();
+	width:210px;
+	height:500px;
+	overflow: hidden;
+	float:left;
+}
+.quiz{
+	margin:0px 0px 0px; 
+	width:197px;
+	height:240px;
+	//background-color: rgba(154,205,50,.50);//#9ACD32;
+	overflow: hidden;
+	margin-left:5px;	
+	float:left;
+	font-size:12px;
+	font-family:"Times New Roman";
+	}
+	.password {
+	background:url('../images/password.png') no-repeat;
+	//background-color: rgba(154,205,50,.50);//#9ACD32;
+	padding-top:65px;
+	border:0px solid red;
+	margin-left:5px;	
+	width:198px;
+	height:125px;
+	overflow: hidden;
+	font-size:16px;
+	float:left;
+	}
+.footer{
+	text-align:center;
+	margin:10px 10px 0px; 
+	border:0px solid red;
+	background:url();
+	font-size:20px ;
+	width:972px;
+	height:25px;
+	background:url('../images/copywrite.jpg') no-repeat ;
+	overflow: hidden;
+	float:left;
+}
+

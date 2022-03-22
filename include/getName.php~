@@ -1,0 +1,26 @@
+<?php
+$xml = simplexml_load_file('userList.xml');
+   $users = array();
+ foreach($xml->children() as $child){
+   $user = array();
+   foreach($child->children() as $subchild)
+   {
+       $user[] = $subchild;
+   }
+   $users[trim($user[1])] = $user[0];
+}
+//echo "<pre>";
+//print_r($users);
+//echo "</pre>";
+//echo $users['sufian@tspbd.com'];
+/*function getAcct(){
+    include_once("db.php");
+    $query1 = "SELECT id,name FROM Account ORDER BY id";
+    $result1 = mysql_query($query1);
+    $acct = array();
+    while($row1 = mysql_fetch_row($result1))
+    $acct[$row1[0]] = $row1[1];
+    return $acct;
+}
+*/
+?>

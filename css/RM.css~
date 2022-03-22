@@ -1,0 +1,51 @@
+#rm
+{	
+  margin: 10px;
+  padding: 0px;
+}
+
+#rm li
+{	
+  float: right;
+  list-style: none;
+  font: 12px Tahoma, Arial;
+  position: relative;
+  width: 110px;
+  height: 20px;
+
+}
+
+#rm li a{  
+  display: block;
+  background: #324143;
+  padding: 5px 12px;
+  text-decoration: none;
+  color: #EAFFED;
+  white-space: nowrap;
+}
+
+#rm li a:hover
+{	background: #24313C;
+}
+
+#rm li ul
+{  
+  position: relative;
+  }
+
+#rm li ul li
+{
+  float: none;
+  display: block;
+  width: 110px;
+}
+
+#rm li ul li a
+{ 
+  background: #A9C251;
+  color: #24313C;
+}
+
+#rm li ul li a:hover
+{	background: #8EA344;
+}

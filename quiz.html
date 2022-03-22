@@ -1,0 +1,461 @@
+<html>
+<head>
+<style type="text/css">
+body {
+background:url('images/quiz.PNG') no-repeat;
+padding-top:55px;
+font-size:13px;
+} 
+input {
+   pointer-events: none;
+   cursor: default;
+}
+</style>
+<title>
+simple quiz test
+</title>
+</head>
+<script type = "text/javascript">
+
+function firstAnswer()
+
+  {
+
+    for (i=0 ; i<document.first.quiz.length ; i++)
+         {
+              if (document.first.quiz[i].checked==true)
+           {
+              var t = document.first.quiz[i].value
+           }
+ }
+
+if (t == "1" )
+ {
+  document.getElementById("txt1").value = "5"
+  }
+else  {
+   document.getElementById("txt1").value = "0"
+}
+ var item = document.getElementById("two");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("one");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+
+
+
+function secondAnswer()
+  {
+
+    for (i=0 ; i<document.second.quiz.length ; i++)
+         {
+              if (document.second.quiz[i].checked==true)
+           {
+              var t = document.second.quiz[i].value
+           }
+ }
+
+if (t == "2" )
+ {
+  document.getElementById("txt2").value = "5"
+  }
+else  {
+   document.getElementById("txt2").value = "0"
+}
+ var item = document.getElementById("three");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("two");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+
+function thirdAnswer()
+  {
+
+    for (i=0 ; i<document.third.quiz.length ; i++)
+         {
+              if (document.third.quiz[i].checked==true)
+           {
+              var t = document.third.quiz[i].value
+           }
+ }
+
+if (t == "1" )
+ {
+  document.getElementById("txt3").value = "5"
+  }
+else  {
+   document.getElementById("txt3").value = "0"
+}
+ var item = document.getElementById("four");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("three");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+
+
+function fourAnswer()
+  {
+
+    for (i=0 ; i<document.four.quiz.length ; i++)
+         {
+              if (document.four.quiz[i].checked==true)
+           {
+              var t = document.four.quiz[i].value
+           }
+ }
+
+if (t == "3" )
+ {
+  document.getElementById("txt4").value = "5"
+  }
+else  {
+   document.getElementById("txt4").value = "0"
+}
+ var item = document.getElementById("five");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("four");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+
+
+function fiveAnswer()
+  {
+
+    for (i=0 ; i<document.five.quiz.length ; i++)
+         {
+              if (document.five.quiz[i].checked==true)
+           {
+              var t = document.five.quiz[i].value
+           }
+ }
+
+if (t == "2" )
+ {
+  document.getElementById("txt5").value = "5"
+  }
+else  {
+   document.getElementById("txt5").value = "0"
+}
+ var item = document.getElementById("six");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("five");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+
+function sixAnswer()
+  {
+
+    for (i=0 ; i<document.six.quiz.length ; i++)
+         {
+              if (document.six.quiz[i].checked==true)
+           {
+              var t = document.six.quiz[i].value
+           }
+       }
+
+if (t == "1" )
+ {
+  document.getElementById("txt6").value = "5"
+  }
+else  {
+   document.getElementById("txt6").value = "0"
+}
+ var item = document.getElementById("seven");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("six");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+function sevenAnswer()
+  {
+
+    for (i=0 ; i<document.seven.quiz.length ; i++)
+         {
+              if (document.seven.quiz[i].checked==true)
+           {
+              var t = document.seven.quiz[i].value
+           }
+       }
+
+if (t == "2" )
+ {
+  document.getElementById("txt7").value = "5"
+  }
+else  {
+   document.getElementById("txt7").value = "0"
+}
+ var item = document.getElementById("eight");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("seven");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+
+function eightAnswer()
+  {
+
+    for (i=0 ; i<document.eight.quiz.length ; i++)
+         {
+              if (document.eight.quiz[i].checked==true)
+           {
+              var t = document.eight.quiz[i].value
+           }
+       }
+
+if (t == "1" )
+ {
+  document.getElementById("txt8").value = "5"
+  }
+else  {
+   document.getElementById("txt8").value = "0"
+}
+ var item = document.getElementById("nine");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("eight");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+
+function nineAnswer()
+  {
+
+    for (i=0 ; i<document.nine.quiz.length ; i++)
+         {
+              if (document.nine.quiz[i].checked==true)
+           {
+              var t = document.nine.quiz[i].value
+           }
+       }
+
+if (t == "3" )
+ {
+  document.getElementById("txt9").value = "5"
+  }
+else  {
+   document.getElementById("txt9").value = "0"
+}
+ var item = document.getElementById("ten");
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+
+ var item = document.getElementById("nine");
+ if (item) {
+ item.className=(item.className=='unhidden')?'hidden':'unhidden';
+ }
+}
+
+function tenAnswer()
+  {
+
+    for (i=0 ; i<document.ten.quiz.length ; i++)
+         {
+              if (document.ten.quiz[i].checked==true)
+           {
+              var t = document.ten.quiz[i].value
+           }
+       }
+
+if (t == "1" )
+ {
+  document.getElementById("txt10").value = "5"
+  }
+else  {
+   document.getElementById("txt10").value = "0"
+}
+var item = document.getElementById("helo");
+item.className=(item.className=='hidden')?'unhidden':'hidden';
+}
+
+function total()
+{
+var a = parseInt(document.getElementById("txt1").value)
+var b = parseInt(document.getElementById("txt2").value)
+var c = parseInt(document.getElementById("txt3").value)
+var d = parseInt(document.getElementById("txt4").value)
+var e = parseInt(document.getElementById("txt5").value)
+var f = parseInt(document.getElementById("txt6").value)
+var g = parseInt(document.getElementById("txt7").value)
+var h = parseInt(document.getElementById("txt8").value)
+var i = parseInt(document.getElementById("txt9").value)
+var j = parseInt(document.getElementById("txt10").value)
+var k = a + b + c + d + e + f + g + h + i + j
+document.getElementById("txt").value = k
+alert("your score is "+k+" out of 50");
+}
+</script>
+</head>
+
+<body>
+<font size="2">
+<div id = "one" class = "unhidden">
+<form name = "first"  >
+1) Tick the secure password below ?</br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >TSPBangladesh<br>
+<input type = "radio" id = "a" value = "2" name = "quiz">TSPBD1234567890<br>
+<input type = "radio" id = "a" value = "3" name = "quiz">TSPB#an@7<br/><br/>
+<input style="float:right;" type = "button" value = "next >" onclick = "firstAnswer()">
+<input type = "hidden" id = "txt1">
+</form>
+</div>
+
+<div  class = "hidden" id = "two">
+<form name = "second" >
+2) which is full form of HTML ?</br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >Hyprer Text Makeup language</br>
+<input type = "radio" id = "a" value = "2" name = "quiz">HyperText MarhUp Language</br>
+<input type = "radio" id = "a" value = "3" name = "quiz">Heavy Text Manmade Language<br>
+<input style="float:right;" type = "button" value = "next >" onclick = "secondAnswer()">
+<input type = "hidden" id = "txt2">
+</form>
+</div>
+
+<div class = "hidden" id = "three">
+<form name = "third" >
+3) which is capital of tamil nadu ?</br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >chennai</br>
+<input type = "radio" id = "a" value = "2" name = "quiz">delhi</br>
+<input type = "radio" id = "a" value = "3" name = "quiz">coimbatore<br></br>
+<input style="float:right;" type = "button" value = "next >" onclick = "thirdAnswer()">
+<input type = "hidden" id = "txt3">
+</form>
+</div>
+
+<div class = "hidden" id = "four">
+<form name = "four" >
+4) which wonder is symbol of love ?</br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >chennai central<br/>
+<input type = "radio" id = "a" value = "2" name = "quiz">nile river</br>
+<input type = "radio" id = "a" value = "3" name = "quiz">Taj mahal</br>
+<input style="float:right;" type = "button" value = "next >" onclick = "fourAnswer()">
+<input type = "hidden" id = "txt4">
+</form>
+</div>
+
+<div class = "hidden" id = "five">
+<form name = "five" >
+5) who is founder of LINUX ?</br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >Abdul Kalam</br>
+<input type = "radio" id = "a" value = "2" name = "quiz">Linus</br>
+<input type = "radio" id = "a" value = "3" name = "quiz">Abraham Linchon<br></br>
+<input style="float:right;" type = "button" value = "next >" onclick = "fiveAnswer()">
+<input type = "hidden" id = "txt5">
+</form>
+</div>
+
+<div class = "hidden" id = "six">
+<form name = "six" >
+6) what is our national Language ?</br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >Hindi</br>
+<input type = "radio" id = "a" value = "2" name = "quiz">English</br>
+<input type = "radio" id = "a" value = "3" name = "quiz">Tamil<br></br>
+<input style="float:right;" type = "button" value = "next >" onclick = "sixAnswer()">
+<input type = "hidden" id = "txt6">
+</form>
+</div>
+
+<div class = "hidden" id = "seven">
+<form name = "seven" >
+7) which is longest river in the world ?</br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >Koovam</br>
+<input type = "radio" id = "a" value = "2" name = "quiz">Nile</br>
+<input type = "radio" id = "a" value = "3" name = "quiz">niagra<br></br>
+<input style="float:right;" type = "button" value = "next >" onclick = "sevenAnswer()">
+<input type = "hidden" id = "txt7">
+</form>
+</div>
+
+<div class = "hidden" id = "eight">
+<form name = "eight" >
+8) who is creator of james Bond?</br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >Ian Fleming</br>
+<input type = "radio" id = "a" value = "2" name = "quiz">James cameroon</br>
+<input type = "radio" id = "a" value = "3" name = "quiz">Shankar<br></br>
+<input style="float:right;" type = "button" value = "next >" onclick = "eightAnswer()">
+<input type = "hidden" id = "txt8">
+</form>
+</div>
+
+<div class = "hidden" id = "nine">
+<form name = "nine" >
+9) who is father of computor ?</br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >Leonanrd paris</br>
+<input type = "radio" id = "a" value = "2" name = "quiz">ken thomas</br>
+<input type = "radio" id = "a" value = "3" name = "quiz">charles babbage<br></br>
+<input style="float:right;" type = "button" value = "next >" onclick = "nineAnswer()">
+<input type = "hidden" id = "txt9">
+</form>
+</div>
+
+<div class = "hidden" id = "ten">
+<form name = "ten" >
+10) who developed world wide web (www) ?</br></br>
+<input type = "radio" id = "a" value = "1" name = "quiz" >Tim Bernes Lee</br>
+<input type = "radio" id = "a" value = "2" name = "quiz">charles babbage</br>
+<input type = "radio" id = "a" value = "3" name = "quiz">Robert bosch<br></br>
+<input style="float:right;" type = "button" value = "next >" onclick = "tenAnswer()" id = "helo" class = "heloo">
+<input type = "hidden" id = "txt10">
+</form>
+<input type = "hidden" id = "txt">
+<input type = "button" value = "score"  onclick = "total()">
+</div>
+
+
+<style type = "text/css">
+.hidden
+{
+display:none;
+}
+.unhidden
+{
+display:block;
+}
+</style>
+</font>
+</body>
+</html>

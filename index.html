@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>security lab</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="css/HBar.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="css/VBar.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="css/RM.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="css/PSC.css" type="text/css" media="screen"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="js/jquery.psc.js"></script>
+<script type="text/javascript" src="js/jquery.corner.js"></script>
+<script type="text/javascript">
+$(function() {
+    var bc = $('#buttonContainer');
+
+    var $container = $('#s1').cycle({ 
+    fx:     'scrollRight', 
+    speed:    800, 
+    timeout:  2000,
+    pause:  1,
+    random: 1
+    });
+    $container.children().each(function(i) {
+        $('<input type="button" value="'+(i+1)+'" >')
+            .appendTo(bc).click(function() {
+                $container.cycle(i);
+                return false;
+            });
+        });
+
+});
+
+
+$('#s6').cycle({ 
+    fx:     'scrollUp', 
+    timeout: 6000, 
+    delay:  -2000 
+});
+$(document).ready(function(){       
+    $("a.nl").click(function() {
+        var currentId = $(this).attr('id');
+        $(".up_middle").load("cont.html #"+currentId,function(){
+            $('#ula').hide();
+            $("#more").bind('mouseover',function(){
+                $('#ula').show('slow');
+            });
+              $("#more").bind('mouseout',function(){
+                $('#ula').delay(5000).hide(2000);
+            });
+        });
+        return false;
+    });                
+});
+
+function slideShow(){
+var current1= $('.scroll:visible:first');
+$(current1).fadeOut(1000);
+$(".news_feeds div:eq(0)").appendTo($('.news_feeds'));
+var current11= $('.scroll:hidden:first');
+$(current11).fadeIn(3000);
+}
+setInterval (slideShow, 2000);
+slideShow();
+
+$('#nav').corner();
+
+/*
+
+$(document).ready(function(){
+	$("#isComment").click(function(){
+	$( "#main" ).load( 'comment.php' );
+	});
+	$("#issLogin").click(function(){
+        $( "#main" ).load('signup.php');
+	alert("SS");//window.location = "index.html";
+	});
+});
+*/
+</script>
+<style type="text/css">
+#bl{
+	color:red;
+	font-size:30px;
+	text-decoration:blink;
+        position:relative;
+	left:60px;	
+	top:-170px;
+	z-index:10;
+}
+/*a,input {
+   pointer-events: none;
+   cursor: default;
+}*/
+</style>
+</head>
+<body>
+ <div class="mainpage">
+		<div class="logo">
+
+<span>
+<img src="images/icon.png"/>
+<a id="issLogin">Log in</a></span>
+
+
+		</div>
+        <div id="menubar"> 
+<div id="bar">
+          <!--div class="submenu"-->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="comment.html">Comment</a></li>
+                        <li><a href="signup.php">Register</a></li>
+                    </ul-->
+                </div>
+        </div> 
+		<div class="up_left">
+			<div class="corporate">
+<div id="nav">
+    <ul class="top-level">
+        <li style="background-color:#008000;" id="top-level-first">  Corporate<br>Security </li>
+        <li><a class="nl" id="a" href="#">BCM</a></li>
+        <li><a class="nl" id="b" href="#">Security Framework</a></li>
+        <li><a href="#">Security Strategy</a></li>
+        <li><a href="#">Telecom Security</a></li>
+        <li><a href="#">IT Strategy</a></li>
+        <li><a href="#">3G Security</a></li>
+        <li id="more_left"><a>--More--</a>
+           <ul class="sub-level">
+	        <li><a href="#">ISMS 27001</a></li>
+	        <li><a href="#">Risk Management</a></li>
+	        <li><a href="#">Policy Procedure Development</a></li>
+	        <li><a href="#">Security Dashboard</a></li>
+	        <li><a href="#">IT Governance</a></li>
+	        <li><a href="#">Security Awareness</a></li>
+		<li><a href="#">Security Architecture</a></li>
+		<li><a href="#">Security in Project</a></li>
+		<li><a href="#">Incident Management</a></li>
+		<li><a href="#">Change Management</a></li>
+		<li><a href="#">GAP Analysis</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+			</div>
+			<div class="gensec">
+<div id="nav">
+    <ul class="top-level">
+        <li style="background-color:#008000;" id="top-level-first">Social  Network & Webmail Security</li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Yahoo! Messenger</a></li>
+        <li><a href="#">Chatting</a></li>
+        <li><a href="#">Skype</a></li>
+        <li><a href="#">Mail Security</a></li>
+        <li><a></a></li>
+    </ul>
+</div>
+			</div>
+			
+			
+		</div>
+		<div class="up_middle">
+			<div class="slide">
+				<div id="s1"> 
+					<img src="images/slide1.jpg" width="585" height="300" /> 
+					<img src="images/slide3.jpg" width="585" height="300" /> 
+					<img src="images/slide4.jpg" width="585" height="300" /> 
+					<img src="images/slide5.jpg" width="585" height="300" /> 
+				</div>
+<span id="bl">This site is under construction...</span>
+			</div>
+<div id="buttonContainer"></div>
+			<div class="article1">
+			<div class=articalHeading>What You Can Do to Protect Yourself </div>
+			<div style="height:88px;width:270px;float:left; overflow:hidden;">The Information Security Branch has developed many of the following resources to help explain information security best practices and how you can keep ahead of identity theft, viruses, and social engineering tactics so you are prepared when an issue arises. Check them out!</div>
+			<div style="position:relative;padding: 10px 0px 0px 170px"><a href="url">Read More..</a> </div>
+
+			</div>
+			<div class="article2">
+			<div class=articalHeading>How to help your kids use social websites more safely</div>
+			<div style="height:88px;width:270px;float:left; overflow:hidden;">These days, many kids draw little distinction between real life and online life. They may use social websites designed for children such as Webkinz or Club Penguin, or social websites designed for adults such as Windows Live Spaces, YouTube, MySpace, Flickr, Twitter, Facebook, and others. Whatever they're doing, they should understand that many of these web pages can be viewed by anyone with access to the Internet.</div>
+			<div style="position:relative;padding: 10px 0px 0px 170px"><a href="url">Read More..</a> </div>
+
+			</div>
+		</div>
+		<div class="up_right">
+			<div class="parentile">
+<div id="nav">
+    <ul class="top-level">
+        <li style="background-color:#008000;" id="top-level-first">Child's Online Safety</li>
+        <li><a href="#">Guideline for Children</a></li>
+        <li><a href="#">Guideline for Industry</a></li>
+        <li><a href="#">Guideline for Parents</a></li>
+        <li><a href="#">Guideline for Teachers</a></li>
+        <li style="font-size:10px;"><a href="#">Online Usage Rules for Children</a></li>
+        <li style="font-size:11px;"><a href="#">Online Usage Rules for Student</a></li>
+    </ul>
+</div>
+
+			</div>
+			<div class="general_fraud">
+<div id="nav">
+    <ul class="top-level">
+        <li style="background-color:#008000;" id="top-level-first">Online Threat & Vulnerabilities</li>
+        <li><a href="#">Phishing</a></li>
+        <li><a href="#">Social Engineering</a></li>
+        <li><a href="#">Malware</a></li>
+        <li><a href="#">Virus & Worms</a></li>
+        <li><a href="#">Trojans</a></li>
+    </ul>
+</div>
+			</div>
+		</div>
+		<div class="down_left">
+	<div class="news_feeds">
+		<div class="scroll"><a href="#"><img style="float:left" src="images/hacking_paypal.jpg" width="50" height="50" />
+			<p>Hacking PayPal accounts to steal user Private data</p></a></div>
+		<div class="scroll"><a href="#"><img style="float:left" src="images/brain.jpg" width="50" height="50" /> 
+			<p>Israeli Scientists develop advanced biological computer</p></a></div>
+		<div class="scroll"><a href="#"><img style="float:left" src="images/finger.png" width="50" height="50" />
+			<p>Massive 167Gbps DDoS attacks against Banking and Financial</p></a></div>
+		<div class="scroll"><a href="#"><img style="float:left" src="images/faceB.png" width="50" height="50" />
+			<p>Another way to hack Facebook accounts using OAuth vulner..</p></a></div>
+		<div class="scroll"><a href="#"><img style="float:left" src="images/chinaHack.jpg" width="50" height="50" /> 
+			<p>Australian's top spy agency headquarters stolen by Chinese h..</p></a></div>
+		<div class="scroll"><a href="#"><img style="float:left" src="images/brain.jpg" width="50" height="50" /> 
+			<p>Israeli Scientists develop advanced biological computer</p></a></div>
+		<div class="scroll"><a href="#"><img style="float:left" src="images/faceB.png" width="50" height="50" />
+			<p>Another way to hack Facebook accounts using OAuth vulner..</p></a></div>
+
+	</div>
+		</div>
+		<div class="down_middle">
+				
+			<div class="down_middle_article1">
+			<div class=articalHeading>Ensure your kids follow age limits on the site</div>	
+			<div style="border:0px solid red;height:150px;width:260px;float:left; overflow:hidden;">The recommended age for signing up for social websites is usually 13 and over. If your children are under the recommended age for these sites, do not let them use the sites. It is important to remember that you cannot rely on the services themselves to keep your underage child from signing up..</div>
+			<div style="position:relative;padding: 60px 0px 0px 170px"><a href="url">Read More..</a> </div>
+			</div>
+			<div class="down_middle_article2">
+			<div class=articalHeading>Operating System Security</div>
+			<div style="margin-top:15px;height:150px;width:260px;float:left; overflow:hidden;">Operating System is the important program that runs on the computer. It performs basic tasks like recognizing the input from the keyboard, controlling various files and directories in the hard disk and also various peripheral devices like printers, scanners etc...It will control the program in such a way that they do not interfere with one another.It is responsible for securing the system by not allowing the unauthorized users to access the system.</div>
+			<div style="position:relative;padding: 60px 0px 0px 170px"><a href="url">Read More..</a> </div>
+			</div>
+			<div class="down_middle_article3">
+			<div class=articalHeading>Use Strong Passwords</div>
+			<div style="margin-top:15px;height:150px;width:260px;float:left; overflow:hidden;">Passwords control access to files, programs, computers, hard drives and networks. They also deny access to unauthorized users. Poorly chosen passwords make it easier to break into your computer systems and expose to malicious attacks. In general, set up passwords and keep them secret never share it with others.</div>
+			<div style="position:relative;padding: 20px 0px 0px 170px"><a href="url">Read More..</a> </div>
+			</div>
+			<div class="down_middle_article4">
+			<div class=articalHeading>One of the common risk through e-mails is SPAM</div>
+			<div style="height:150px;width:260px;float:left; overflow:hidden;margin-top:-5px;">Spam is usually unwanted e-mail advertising about a product sent to list of e-mails or group of e-mail addresses. Generally spamming companies send e-mails to thousands of email addresses every day without confirming whether e-mail addresses are real or not .When ever you open a spam mail it alerts the spammer at the other end and confirms that email address is real and is active. This will continue to spam and sometimes directory of such email addresses are sold to other companies..</div>
+			<div style="position:relative;padding: 40px 0px 0px 170px"><a href="url">Read More..</a> </div>
+			</div>
+			
+		</div>
+
+
+		<div class="down_right">
+
+			<div class="quiz">
+<object type="text/html" style = "width:198px; height: 239px;overflow:hidden;margin:0px 0px 0px 0px; " data="quiz.html"></object>
+			</div>
+
+
+<div class="password">
+<form id="register">
+<label for="password">Enter Password : </label>
+<input name="password" id="password" type="password"/><br/>
+<span id="result"></span>
+</form>	
+			</div>
+
+		
+		</div>
+		<div class="footer">
+		 <center></center>
+		</div>
+                 <footer><h6 style="text-align:center;"> Copyright &copy; 2013 SecuritySense All rights reserved. <h6></footer>
+
+ </div>
+</body>
+</html>
