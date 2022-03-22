@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77214907-83c3-4242-9083-ef4651834279" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/SecuritySence/security_sense.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1647926481897</updated>
       <workItem from="1647926484921" duration="2196000" />
-      <workItem from="1647930451171" duration="2429000" />
+      <workItem from="1647930451171" duration="3633000" />
     </task>
     <servers />
   </component>
