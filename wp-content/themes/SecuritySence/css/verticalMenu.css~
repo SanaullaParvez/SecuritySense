@@ -1,0 +1,144 @@
+/* Some stylesheet reset */
+#anItem .menu, #anItem .menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	line-height: .5;
+}
+
+/* The container */
+#anItem .menu, #anItem .menu ul {
+	display: block;
+	position: relative;
+	width: 200px;
+	//border-top: 1px dotted #3a3a3a;
+}
+
+	/* The list elements which contain the links */
+	#anItem .menu li {
+		display: block;
+		position: relative;
+		margin: 0;
+		padding: 0;
+		width: 150px;	
+	}
+
+		/* General link styling */
+		#anItem .menu li a {
+			/* Layout */
+			display: block;
+			position: relative;
+			margin: 0;
+			border-top: 1px dotted #3a3a3a;
+			border-bottom: 1px dotted #1b1b1b;
+			padding: 5px 0px 5px 5px;
+			width: 200px;
+
+			/* Typography */
+			font-family:"Times New Roman", Times, serif;
+			color: #000;
+			//text-decoration: none;
+			//text-transform: uppercase;
+			//text-shadow: 0 1px 1px #000;
+			font-size: 15px;
+			//font-weight: 300;
+
+			/* Background & effects 
+			background: #282828;*/
+			background-color:#fff;//#9ACD32;
+			line-height:15px;
+		}
+
+		/* Rounded corners for the first link of the menu/submenus */
+		#anItem .menu li:first-child>a {
+			//border-top-left-radius: 4px;
+			//border-top-right-radius: 4px;
+			//border-top: 0;
+		}
+
+		/* Rounded corners for the last link of the menu/submenus */
+		#anItem .menu li:last-child>a {
+			border-bottom-left-radius: 4px;
+			border-bottom-right-radius: 4px;
+			border-bottom: 0;
+		}
+
+
+		/* The hover state of the menu/submenu links */
+		#anItem .menu li>a:hover, #anItem .menu li:hover>a {
+			font-size: 16px;
+			background:#32CD32;
+			color: #b94861;
+			/*background: #d4b800;
+			background: -webkit-linear-gradient(bottom, #d4b800, #f6d600);
+			background: -ms-linear-gradient(bottom, #d4b800, #f6d600); 
+			background: -moz-linear-gradient(bottom, #d4b800, #f6d600);
+			background: -o-linear-gradient(bottom, #d4b800, #f6d600);*/
+			border-color: transparent;
+		}
+
+		/* The arrow indicating a submenu */
+
+		#anItem .menus li>a::after {
+			content: '';
+			position: absolute;
+			top: 16px;
+			right: 10px;
+			width: 0px;
+			height: 0px;
+
+			/* Creating the arrow using borders */
+			border: 4px solid transparent;
+			border-left: 4px solid #d8d8d8; 
+		}
+
+		/* The same arrow, but with a darker color, to create the shadow effect */
+		#anItem .menus li>a::before {
+			content: '';
+			position: absolute;
+			top: 17px;
+			right: 10px;
+			width: 0px;
+			height: 0px;
+
+			/* Creating the arrow using borders */
+			border: 4px solid transparent;
+			border-left: 4px solid #000;
+		}
+
+		/* Changing the color of the arrow on hover */
+		#anItem .menu li>a:hover::after, #anItem .menu li:hover>a::after {
+			border-left: 4px solid #fff;
+		}
+
+		#anItem .menu li>a:hover::before, #anItem .menu li:hover>a::before {
+			border-left: 4px solid rgba(0, 0, 0, .3);
+		}
+
+	
+		/* THE SUBMENUS */
+		#anItem .menu ul {
+			display:block;
+			width: 205px;
+			background:#32CD32;
+			color: #b94861;
+			z-index:10;
+			position: absolute;
+			left: 200px;
+			top: -9999px;
+			padding: 5px;
+			opacity: 0;
+			/* The fade effect, created using an opacity transition */
+			-webkit-transition: opacity .3s ease-in;
+			-moz-transition: opacity .3s ease-in;
+			-o-transition: opacity .3s ease-in;
+			-ms-transition: opacity .3s ease-in;
+		}
+
+		/* Showing the submenu when the user is hovering the parent link */
+		#anItem .menu li:hover>ul {
+			top: 0px;
+			opacity: 1;
+		}
+

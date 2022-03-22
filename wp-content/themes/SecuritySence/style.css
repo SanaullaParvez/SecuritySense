@@ -1,0 +1,262 @@
+/*
+Theme Name: SecuritySence
+Theme URI: http://www.securitysence.org
+Description: A sample Website for Security Information.
+Version: 1.0
+Author: TSP Bangladesh
+Author URI: http://www.tspbd.com
+*/
+
+root { 
+    display: block;
+}
+
+* {
+    padding:0;
+    margin:0;
+    list-style: square;
+}
+A {
+    text-decoration:none;
+    border:none;
+}
+A:link    { color: #3A6200}    /* unvisited links */
+A:visited { color: #686833; }   /* visited links   */
+A:hover   { color: blue; }
+A:active  { color: red }   /* active links    */
+img {
+    border:none;
+}
+body {
+    font-family:'wf_SegoeUI',Arial,sans-serif;
+    //font-family:"Arial", Helvetica, sans-serif;
+    color:#000;
+    font-size:12px;
+    background: #FFFDDC;
+
+}
+#wrap {
+    width:960px;
+    border:0px solid red;
+    margin:0 auto;
+    background:#FFF;
+//    opacity:0.8;
+}
+#header {
+    width:960px;
+    //overflow:hidden;
+    height:115px;
+    border:0px solid red;
+}
+.banner{
+    background-image: url("images/bannerSS.jpg");
+    width:956px;
+    height:90px;
+}
+.banner h1 {
+    float:left;
+    margin: 16px 0px 10px 15px;
+}
+.banner h1 a {
+    display:block;
+    width:270px;
+    height:62px;
+}
+.banner #selectLang {
+    float:right;
+    font-weight:bold;
+    margin-top: 5px;
+}
+.banner #selectLang a {
+    margin-left: 10px;
+}
+#electLang {
+	//position:absolute;
+	//right:200px;
+	font-weight:bold;
+	//margin-top:-80px;
+	float:left;
+}
+.header_menu {
+    float:right;
+    width:958px;
+    height:40px;
+    border:0px solid red;
+    padding:0px;
+    //margin-top:60px;
+}
+/*
+
+.header_menu ul{margin:5px; padding:5px 5px 5px 30px; list-style:none; text-shadow:0px 2px 10px #000;}
+.header_menu ul li{float:left;margin-right:10px;font-size:15px;}
+.header_menu ul li a{padding:5px 10px;font-weight:bold;text-transform:uppercase;color:#046197;text-decoration: none; }
+.header_menu ul li a:hover {color:orange;}
+
+*/
+#main_content {
+    width:960px;
+    //overflow:hidden;
+    border:0px solid red;
+}
+#left_sidebar{
+    float:left;
+    width:220px;
+    padding:0px 0px 0px 0px;
+    border:0px solid red;
+    height:auto;
+    //background-color:#FFE4E1;
+    margin-left:5px;
+}
+#anItem{
+	margin:5px 5px 10px;
+	border: 0px solid #FFC0CB;
+	background-color: #fff;
+	border-radius:5px;
+	box-shadow:0px 0px 3px 3px silver;
+}
+#anItem h2 {
+    //background-color:#66C266;//#008000;
+    line-height:30px;
+    padding:0px 0px 5px 0px;
+    border-radius:5px;
+    //border-bottom:1px dashed black;
+    text-align:center;
+    font-size:20px;
+    color:#000;
+    //box-shadow:5px 5px 30px 5px #009900 inset;
+
+
+}
+.sub_content {
+    float:right;
+    width:728px;	
+    border:0px solid red;
+}
+.content{
+    text-align: justify;
+    float:left;
+    width:490px;
+    /height:860px;
+    margin:05px 0px 0px 0px;
+    border:0px solid red;
+}
+ul.content{
+    padding: 0px 0px 0px 5px;
+}
+
+/* =Pagination (pages)
+-------------------------------------------------------------- */
+.pagination {
+	clear: both;
+	display: block;
+	font-size: 16px;
+	font-weight: 700;
+	margin: 10px 0;
+	padding: 5px 0;
+	color:green;
+}
+
+.pagination a {
+	text-decoration: none;
+}
+
+
+#slider{
+    z-index:-1;
+    width:498px;
+    height:300px;
+    border:0px solid red;
+box-shadow:0px 0px 3px 3px silver;
+}
+#artical{
+    width:498px;
+    height:auto;
+    border:0px solid red;
+    margin-top:10px;
+    /*overflow:scroll;*/
+}
+#right_sidebar {
+    float:right;
+    width:218px;
+    padding:0px 0px 0px 0px;
+    border:0px solid red;
+    height:auto;//860px;
+    overflow:hidden;
+    /*background-color:#FFE4E1;*/
+    border:0px solid red;
+    margin-right:5px;
+}
+#simpleQuiz{
+color:white;
+text-align:center;
+font-size:14pt;
+font-weight:bold;
+}
+#simpleQuiz a{
+padding:3px 0px 7px;
+width:auto;
+height:20px;
+display:block;
+border-radius:10px;
+background: none repeat scroll 0% 0% #228B22;
+margin:10px 20px 0px;
+color:white;
+box-shadow: 2px 2px 2px rgb(51, 51, 51);
+}
+#simpleQuiz a:hover{
+background:#32CD32;
+color: #b94861;
+}
+#passwordCheck{
+margin-top: 10px;
+border: 1px solid green;
+background-color: #fff;
+}
+.fixed{
+	border: 1px solid green;
+	background-color: #fff;
+	position: absolute;
+	height: 220px;
+	width: 250px;
+	margin-top: 40%;
+	overflow: hidden;
+}
+.footer {
+    width:957px;
+    height:auto;
+    border:0px solid red;
+    overflow:hidden;
+    padding:0px 0;
+    margin-bottom:5px;
+    text-align:center;
+    background-color:#F5F5F5;
+    /*border-radius:5px;
+    //box-shadow:0px 0px 3px 3px silver;*/
+
+}
+hr{
+	width:100%;
+	height:3px;
+	box-shadow:0px 0px 3px 3px silver;
+}
+#bl{
+	color:red;
+	font-size:30px;
+	text-decoration:blink;
+        position:relative;
+	left:40px;	
+	top:-170px;
+	z-index:9;
+}
+.selected{
+position:relative;
+z-index:101;
+}
+/*a,input {
+   pointer-events: none;
+   cursor: default;
+}*/
+#comment{
+    width: 500px;
+    height: 100px;
+}

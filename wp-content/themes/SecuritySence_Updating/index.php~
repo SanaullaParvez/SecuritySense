@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Ice Age - WordPress theme</title>
+<style type="text/css"></style>
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
+<?php wp_head(); ?>
+</head>
+
+
+<body>
+<div class='main header'>
+
+	<div class='logo'><a href="<?php echo home_url(); ?>">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt='logo'></a>
+	</div>
+
+				<div class='menu'>
+					<ul>
+							<li><a href="#">Home</a></li>
+							
+							<li><a href="#">Page</a></li>
+							
+							<li><a href="#">Blog</a></li>
+							
+							<li><a href="#">About</a></li>
+							
+							<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+</div>
+
+<div class=" main content">
+<h1>Welcome</h1>
+<p>This article is about developing WordPress Themes. 
+If you wish to learn more about how to install and use Themes, review Using Themes. 
+This topic differs from Using Themes because it discusses the technical aspects of writing code to build your own Themes rather than how to activate Themes or where to obtain new Themes.</p>
+</br>
+</br>
+</div>
+
+
+<div class='footer'>
+
+	<div class='footer fixed widget1'>
+		<img src="<?php echo get_template_directory_uri(); ?>/images/image-1.jpg">  
+	</div>
+	
+	<div class='footer fixed widget2'>
+		<img src="<?php echo get_template_directory_uri(); ?>/images/image-2.jpg"> 
+	</div>
+	
+	<div class='footer fixed widget3'>
+		<img src="<?php echo get_template_directory_uri(); ?>/images/image-3.jpg"> 
+	</div>
+	
+	<div class=" footer copyright"> &copy; All Rights Reserved by Rupok</div>
+</div>
+<?php wp_footer(); ?>
+</body>
+</html>

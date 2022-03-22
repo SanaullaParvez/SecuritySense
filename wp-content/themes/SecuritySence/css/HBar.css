@@ -1,0 +1,30 @@
+#bar {
+	background:#000000;
+	width:988px;
+	height:40px;    
+	border-radius: 4px;
+	
+}
+#bar ul li a{
+ display:block;
+ line-height: 35px;
+ text-decoration:none;
+ width:100%;
+ text-align: center;
+ color:white;
+}
+#bar ul li a:hover{
+    background:url('../images/templatemo_button_01.png') no-repeat center center;
+}
+#bar ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;   
+}
+#bar ul li {
+    float: left;
+    width:120px;
+//    background-color:#9ACD32;
+//    border:1px solid #7CFC00; 
+
+}

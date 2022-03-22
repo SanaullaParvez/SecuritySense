@@ -1,0 +1,118 @@
+/*
+	Name: CSS3 Dropdown Menu
+	Created in: March 2013
+	Description: Basic CSS3 Dropdown Menu with simple animation
+	Version: 1.0
+	Author: Christian Vasile
+	Author URL: http://christianvasile.com
+*/
+
+
+/* Reset */
+.header_menu .menu,
+.header_menu .menu ul,
+.header_menu .menu li,
+.header_menu .menu a {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+/* Positioning */
+.header_menu ul.menu {
+	margin: 0px auto 0 auto;
+}
+
+/* Menu */
+.header_menu .menu {
+	height: 40px;
+	width: auto;
+	
+	background:url('menubar.jpg') no-repeat; //#1B7203;//#4c4e5a;
+	
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	
+	/*background: linear-gradient(top, #535562 0%, #202023 100%);
+	background: -moz-linear-gradient(top, #535562 0%, #202023 100%);
+	background: -webkit-linear-gradient(top, #535562 0%, #202023 100%);		
+	background: -ms-linear-gradient(top, #535562 0%, #202023 100%);*/	
+}
+
+.header_menu .menu li {
+	list-style: none;
+	float: left;
+	display: block;
+	height: 40px;
+	position: relative;
+}
+
+/* Links */
+.header_menu .menu li a {
+	display: block;
+	text-decoration: none;
+	font-weight: bold;
+	color: #FFF;
+	font-size: 15px;
+	padding: 0 15px;
+	margin: 5px 0;
+	line-height: 30px;
+	border-left: 1px solid #393942;
+	border-right: 1px solid #393942;
+	
+	transition: color .3s ease;
+	-moz-transition: color .3s ease;
+	-webkit-transition: color .3s ease;
+	-ms-transition: color .3s ease;			
+}
+
+.header_menu .menu li:first-child a { border-left: none; }
+.header_menu .menu li:last-child a { border-right: none; }
+
+.header_menu .menu li:hover > a { color: #b94861; }
+
+/* Sub Menu */
+
+.header_menu .menu ul {
+	position: absolute;
+	opacity: 0;
+	background: #575a62;
+	
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;	
+		
+	transition: opacity .25s ease .1s;
+	-moz-transition: opacity .25s ease .1s;
+	-webkit-transition: opacity .25s ease .1s;
+	-ms-transition: opacity .25s ease .1s;				
+}
+
+.header_menu .menu li:hover > ul {
+	z-index:10;
+	opacity: 1;
+}
+
+.header_menu .menu ul li {
+	height: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+.header_menu .menu li:hover > ul li {
+	height: auto;
+	overflow: visible;
+}
+
+.header_menu .menu ul li a {
+	width: 100px;
+	margin: 0;
+	padding: 5px 15px;
+	border: none;
+	border-bottom: 1px solid #353539;	
+}
+
+.header_menu .menu ul li:last-child a { border: none; }
+

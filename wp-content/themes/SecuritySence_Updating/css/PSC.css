@@ -1,0 +1,39 @@
+
+#register {
+	margin-left:1px;	
+}
+#register label{
+	float:center;
+	margin:10px;
+	display:block;
+}
+#register input {
+	background:#d5d9da;
+	padding:5px 30px;
+	border:1px solid #d5d9da;
+	box-shadow: 0 0 5px #e8e9eb inset;
+	width:125px;
+	font-size:1em;
+	outline:0;
+}
+
+#result{
+	margin-left:5px;
+}
+
+#register .short{
+	color:#FF0000;
+
+}
+
+#register .weak{
+	color:#E66C2C;
+}
+
+#register .good{
+	color:#2D98F3;
+}
+
+#register .strong{
+	color:#006400;
+}

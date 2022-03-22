@@ -1,0 +1,96 @@
+.pbox{    
+    padding:0px 10px 0px 5px;
+    //background-color: black;
+    display: block;
+    width:234px;
+    //height:110px;
+    float: left;
+    border:0px solid red;
+    border-radius:10px;
+    //box-shadow:0px 0px 3px 1px silver;
+}
+
+div.title-holder {
+  width:237px;
+  height:20px;
+  overflow:hidden;
+  white-space:no-wrap;
+  text-align:left;
+}
+div.title-holder a {
+    position:relative;
+    left:0px;
+    white-space:nowrap; /*this guy is important!*/
+}
+.anArticle{
+    font-family:"Times New Roman", Times, serif;
+    text-align:justify;
+    display: block;
+    width:237px;
+    height:95px;
+    overflow:hidden;
+    border:0px solid red;
+    font-size:12px;
+}
+.rticleHeading{
+    //background-color:#F5F5F5;//background-color: darkolivegreen;
+    font:bold 15px Calibri;
+    color: green;
+    margin-bottom:5px;
+    text-align:left;
+    height:37px;
+    vertical-align:middle;
+}
+.articleHeading{
+font:bold 15px Calibri;
+color: green;
+text-align:left;
+height:39px;
+border:0px solid black;
+line-height:16px;
+/* Firefox */
+display:-moz-box;
+-moz-box-orient:vertical;
+-moz-box-pack:center;
+-moz-box-align:center;
+
+/* Safari and Chrome */
+display:-webkit-box;
+-webkit-box-orient:horizontal;
+-webkit-box-pack:center;
+-webkit-box-align:center;
+
+/* W3C */
+display:box;
+box-orient:horizontal;
+box-pack:center;
+box-align:center;
+
+}
+.more{
+    display: block;
+    width: 100px;
+    //height: 20px;
+    margin-top:5px;
+    margin-right:10px;
+    float: right; 
+}
+.more a {
+    font-family:"Times New Roman", Times, serif;
+	display: block;
+	width: 90px;
+	height: 18px;
+	padding: 0px 0 0 30px;
+        //background: url(../images/rmore.jpg) no-repeat;	
+	color: blue;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.more a:hover{
+	text-decoration: underline;
+	color: green;
+
+   
+}

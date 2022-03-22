@@ -1,0 +1,56 @@
+.articleHeading{
+    background-color:#F5F5F5;//background-color: darkolivegreen;
+    font-size:16px;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+.pbox{    
+    padding:5px 10px 7px 5px;
+    //background-color: black;
+    display: block;
+    width:234px;
+    height:180px;
+    float: left;
+    //color: white;
+    text-align:justify;
+    border:0px solid red;
+    //margin-bottom:10px;
+    border-radius:10px;
+    box-shadow:0px 0px 3px 1px silver;
+}
+.articleDetails{
+font-family:"Times New Roman", Times, serif;
+    display: block;
+    width:237px;
+    height:158px;
+    overflow:hidden;
+    border:0px solid red;
+    font-size:14px;
+    
+}
+.more{
+    display: block;
+    width: 100px;
+    //height: 20px;
+    margin-top:5px;
+    margin-right:10px;
+    float: right; 
+}
+.more a {
+	display: block;
+	width: 90px;
+	height: 18px;
+	padding: 0px 0 0 20px;
+        //background: url(../images/rmore.jpg) no-repeat;	
+	color: #000000;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.more a:hover{
+	text-decoration: underline;
+	color: green;
+
+   
+}
