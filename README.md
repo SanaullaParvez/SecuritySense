@@ -8,3 +8,5 @@ To run this Project,
 5. and that's all.
 6. Sites URL: `http://localhost/SecuritySense/`
 7. To see the previous and static version, URL - `http://localhost/SecuritySense/static_site/`
+
+### This Project's similar content in available here - https://securitysense.org
